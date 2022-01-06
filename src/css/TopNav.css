@@ -10,22 +10,27 @@ h1 {
   font-size: 5em;
 }
 
-.top-nav-btns {
-  width: 15%;
-  margin: 10px;
+.top-nav-btns-box {
+  border: 3px solid red;
+  width: 25%;
   display: grid;
-  grid-gap: 5%;
   grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  justify-items: center;
+  align-items: center;
 }
 
 button {
+  font-family: 'oblivion';
+  font-size: 1.05em;
   border: 1px solid white;
   border-radius: 10px;
+  padding: 20px 40px 20px 40px;
 }
 
 button:hover {
   background-color: white;
-  border: none;
 }
 
 .home-btn {
@@ -34,4 +39,77 @@ button:hover {
 
 .my-spellbook-btn {
   grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-small {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    background-color: purple;
+    padding: 10px 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: 'DarkXShadowX';
+    font-size: 6em;
+  }
+
+  .top-nav-btns-box {
+    border: 3px solid red;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  header {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: 'DarkXShadowX';
+    font-size: 4.5em;
+  }
+
+  .top-nav-btns-box {
+    border: 3px solid red;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .home-btn {
+    grid-row: 1;
+  }
+
+  .my-spellbook-btn {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-small {
+    font-size: 1.2em;
+  }
 }
