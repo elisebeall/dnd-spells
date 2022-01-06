@@ -1,7 +1,8 @@
 import React from "react";
-import dataStub from "../testing/stub data";
+import dataStub from "../testing/stub data"; //Remove when we get data from App or context.
 import { Link } from "react-router-dom";
 import Spell from "./Spell";
+import "../css/SpellBox.css";
 
 const SpellBox = () => {
     const allSpells = dataStub.spellDetails;
@@ -10,7 +11,6 @@ const SpellBox = () => {
         return (
             <Link to={`/spells/${spell.index}`} key={spell.index} > 
             <Spell 
-                index={spell.index}
                 name={spell.name}
                 level={spell.level}
                 school={spell.school.name}
