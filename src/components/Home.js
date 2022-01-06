@@ -7,13 +7,13 @@ import { FaHatWizard } from 'react-icons/fa';
 const Home = () => {
   return (
     <main>
-      <Link className="spells" to="/spells">
+      <Link className="home-nav" to="/spells">
         <GiBlackBook className="icon-large" />
-        <p>Browse Spells</p>
+        <h3>Browse Spells</h3>
       </Link>
-      <Link className="my-spellbook" to="/my-spellbook">
+      <Link className="home-nav" to="/my-spellbook">
         <FaHatWizard className="icon-large"/>
-        <p>My Spellbook</p>
+        <h3>My Spellbook</h3>
       </Link>
     </main>
   )

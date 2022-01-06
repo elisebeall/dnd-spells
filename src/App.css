@@ -23,15 +23,20 @@
   src: url('./css/fonts/The-Wild-Breath-of-Zelda.otf')
 }
 
+html {
+  font-size: 15px;
+}
+
 * {
   margin: 0;
-  /* border: 1px solid black; */
 }
 
 button {
   cursor: pointer;
   border: none;
   background: none;
+  all: unset;
+  display: revert;
 }
 
 a {

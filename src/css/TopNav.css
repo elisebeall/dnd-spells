@@ -7,109 +7,86 @@ header {
 
 h1 {
   font-family: 'DarkXShadowX';
-  font-size: 5em;
+  font-size: 6rem;
 }
 
 .top-nav-btns-box {
-  border: 3px solid red;
-  width: 25%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  grid-gap: 1px;
-  justify-items: center;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-button {
+.top-nav-btn {
   font-family: 'oblivion';
-  font-size: 1.05em;
+  text-align: center;
+  font-size: 1.8rem;
   border: 1px solid white;
-  border-radius: 10px;
-  padding: 20px 40px 20px 40px;
+  border-radius: 7px;
+  width: 45%;
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
 }
 
-button:hover {
+.top-nav-btn:hover {
   background-color: white;
 }
 
-.home-btn {
-  grid-column: 1;
-}
-
-.my-spellbook-btn {
-  grid-column: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.top-nav-btn:active {
+  background-color: white;
 }
 
 .icon-small {
-  font-size: 1.2em;
+  padding-right: 0.25rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1800px) {
+  .top-nav-btns-box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
   header {
-    background-color: purple;
-    padding: 10px 40px 10px 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-
-  h1 {
-    font-family: 'DarkXShadowX';
-    font-size: 6em;
   }
 
   .top-nav-btns-box {
-    border: 3px solid red;
     width: 90%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-gap: 1px;
-    justify-items: center;
-    align-items: center;
   }
 }
 
 @media screen and (max-width: 415px) {
   header {
-    background-color: purple;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1.8rem;
   }
 
   h1 {
-    font-family: 'DarkXShadowX';
-    font-size: 4.5em;
+    text-align: center;
+    font-size: 4rem;
   }
 
   .top-nav-btns-box {
-    border: 3px solid red;
     width: 90%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50% 50%;
-    grid-gap: 5px;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .home-btn {
-    grid-row: 1;
-  }
-
-  .my-spellbook-btn {
-    grid-row: 2;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+  }
+
+  .top-nav-btn {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    margin: 0.5rem;
   }
 
   .icon-small {
-    font-size: 1.2em;
+    display: none;
   }
 }

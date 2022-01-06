@@ -8,16 +8,12 @@ const TopNav = () => {
     <header>
       <h1>Squizard's Spells</h1>
       <div className="top-nav-btns-box">
-        <Link to="/">
-          <button className="home-btn">
-            Home
-          </button>
+        <Link className="top-nav-btn" to="/">
+          Home
         </Link>
-        <Link to="/my-spellbook">
-          <button className="my-spellbook-btn">
-            <FaHatWizard className="icon-small" />
-            My Spellbook
-          </button>
+        <Link className="top-nav-btn" to="/my-spellbook">
+          <FaHatWizard className="icon-small" aria-hidden="true"/>
+          My Spellbook
         </Link>
       </div>
     </header>
