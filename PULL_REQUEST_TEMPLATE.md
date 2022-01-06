@@ -1,4 +1,4 @@
-## [name of project]
+## [DnD Spells]
 
 - [ ] - Feature PR [🧩]
 - [ ] - Refactor PR [⚙️]
