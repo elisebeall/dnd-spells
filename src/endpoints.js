@@ -1,5 +1,5 @@
 export const endpoints = {
-  spells: '',
+  spells: 'https://www.dnd5eapi.co/api/spells/',
   /* RETURNS:
     {
       "count": 319,
@@ -17,7 +17,7 @@ export const endpoints = {
       ]
     }
   */
-  classes: '',
+  classes: 'https://www.dnd5eapi.co/api/classes/',
   /* RETURNS:
     {
       "count": 12,
@@ -36,7 +36,7 @@ export const endpoints = {
     }
   */
   spell: 'https://www.dnd5eapi.co/api/spells/${index}'
-  /* ${acid-arrow} RETURNS:
+  /* ${index} = acid-arrow RETURNS:
     {
       "index": "acid-arrow",
       "name": "Acid Arrow",
