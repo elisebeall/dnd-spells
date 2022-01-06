@@ -1,0 +1,48 @@
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: 'DarkXShadowX';
+  src: url('./css/fonts/DarkXShadowX.ttf')
+}
+
+@font-face {
+  font-family: 'El-Milagro-de-Empel';
+  src: url('./css/fonts/El-Milagro-de-Empel.otf')
+}
+
+@font-face {
+  font-family: 'oblivion';
+  src: url('./css/fonts/oblivion.ttf')
+}
+
+@font-face {
+  font-family: 'PRINP';
+  src: url('./css/fonts/PRINP.ttf')
+}
+
+@font-face {
+  font-family: 'The-Wild-Breath-of-Zelda';
+  src: url('./css/fonts/The-Wild-Breath-of-Zelda.otf')
+}
+
+html {
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  all: unset;
+  display: revert;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+>>>>>>> 41dfb61c755c33c536dc50c4627d7564d03d7a62

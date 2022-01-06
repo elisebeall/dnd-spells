@@ -1,0 +1,92 @@
+header {
+  background-color: purple;
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'DarkXShadowX';
+  font-size: 6rem;
+}
+
+.top-nav-btns-box {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-nav-btn {
+  font-family: 'oblivion';
+  text-align: center;
+  font-size: 1.8rem;
+  border: 1px solid white;
+  border-radius: 7px;
+  width: 45%;
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.top-nav-btn:hover {
+  background-color: white;
+}
+
+.top-nav-btn:active {
+  background-color: white;
+}
+
+.icon-small {
+  padding-right: 0.25rem;
+}
+
+@media screen and (max-width: 1800px) {
+  .top-nav-btns-box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-nav-btns-box {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.8rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .top-nav-btns-box {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-nav-btn {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    margin: 0.5rem;
+  }
+
+  .icon-small {
+    display: none;
+  }
+}

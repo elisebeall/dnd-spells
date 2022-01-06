@@ -1,12 +1,16 @@
 import './App.css';
-import React from 'react';
+import React, { Fragment } from 'react';
+import TopNav from './components/TopNav';
+import Home from './components/Home';
 import SpellDetails from './components/SpellDetails';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <>
+      <TopNav />
+      <Home />
       <SpellDetails />
-    </div>
+    </>
   );
 }
 
