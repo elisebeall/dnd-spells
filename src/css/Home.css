@@ -1,0 +1,22 @@
+main {
+  padding: 5% 0 5% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-large {
+  font-size: 10em;
+}
+
+.spells {
+  border: 5px solid black;
+  padding: 10%;
+  font-family: 'oblivion';
+}
+
+.my-spellbook {
+  border: 5px solid black;
+  padding: 10%;
+  font-family: 'oblivion';
+}

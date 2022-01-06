@@ -1,0 +1,37 @@
+header {
+  background-color: purple;
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'DarkXShadowX';
+  font-size: 5em;
+}
+
+.top-nav-btns {
+  width: 15%;
+  margin: 10px;
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: 50% 50%;
+}
+
+button {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: white;
+  border: none;
+}
+
+.home-btn {
+  grid-column: 1;
+}
+
+.my-spellbook-btn {
+  grid-column: 2;
+}
