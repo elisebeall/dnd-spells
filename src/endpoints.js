@@ -1,4 +1,4 @@
-export const endpoints = {
+const endpoints = {
   spells: 'https://www.dnd5eapi.co/api/spells/',
   /* RETURNS:
     {
@@ -35,7 +35,7 @@ export const endpoints = {
       ]
     }
   */
-  spell: 'https://www.dnd5eapi.co/api/spells/${index}',
+  spell: 'https://www.dnd5eapi.co/api/spells/${index}/',
   /* ${index} = acid-arrow RETURNS:
     {
       "index": "acid-arrow",
@@ -103,8 +103,8 @@ export const endpoints = {
       "url": "/api/spells/acid-arrow"
     }
   */
-  charSpells: 'https://www.dnd5eapi.co/api/classes/${class}/spells',
-  /* ${class} = warlock RETURNS:
+  charSpells: 'https://www.dnd5eapi.co/api/classes/${charClass}/spells',
+  /* ${charClass} = warlock RETURNS:
     {
       "count": 64,
       "results": [
@@ -122,3 +122,5 @@ export const endpoints = {
     }
   */
 }
+
+export default endpoints;
