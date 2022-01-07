@@ -5,14 +5,14 @@ import Bookmark from './Bookmark';
 import charClassIcons from '../charClassIcons.js';
 
 const CharClass = ({ charClass }) => {
-  const image = `${charClass.index}`;
-
+  const { index, name } = charClass;
+  
   return (
     <div className="char-class-card">
       <Bookmark />
-      <Link to={charClass.index}>
-        <img src={charClassIcons.squizard} alt={`${charClass.name}`} />
-        <h3>{charClass.name}</h3>
+      <Link to={index}>
+        <img src={charClassIcons.squizard} alt={`${name}`} />
+        <h3>{name}</h3>
       </Link>
     </div>
   )
