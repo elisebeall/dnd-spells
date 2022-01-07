@@ -6,7 +6,6 @@ const details = dataStub.spellDetails[0];
 
 
 const SpellDetails = ({}) => {
-  console.log(details)
 
   return(
     <div className='individual-spell'>
@@ -16,11 +15,12 @@ const SpellDetails = ({}) => {
         <p>Range: {details.range}</p>
         <p>Casting Time: {details.casting_time}</p>
         <p>Components: {details.components}</p>
-        <p>Materials: {details.material}</p>
         <p>Duration: {details.duration}</p>
+        <p>School Name: {details.school.name}</p>
       </div>
-      <p>School Name: {details.school.name}</p>
-      <p>Description: {details.desc}</p>
+      <p className='materials'>Materials: {details.material}</p>
+      <p className='description'>Description: {details.desc}</p>
+      <button className='go-back'>Go Back</button>
     </div>
   )
 }
