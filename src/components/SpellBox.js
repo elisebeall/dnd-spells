@@ -1,5 +1,5 @@
-import React from "react";
-import dataStub from "../testing/stub data"; //Remove when we get data from App or context.
+import { Fragment } from "react";
+import dataStub from "../assets/stubData.js"; //Remove when we get data from App or context.
 import { Link } from "react-router-dom";
 import Spell from "./Spell";
 import Bookmark from "./Bookmark"
@@ -20,12 +20,11 @@ const SpellBox = () => {
         )
     })
 
-    return (
-        <div>
-            {spells}    
-        </div>
-        
-    )
+  return (
+    <>
+      {spells}
+    </>
+  )
 }
 
 export default SpellBox;

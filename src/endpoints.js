@@ -1,4 +1,4 @@
-export const endpoints = {
+const endpoints = {
   spells: 'https://www.dnd5eapi.co/api/spells/',
   /* RETURNS:
     {
@@ -35,7 +35,7 @@ export const endpoints = {
       ]
     }
   */
-  spell: 'https://www.dnd5eapi.co/api/spells/${index}'
+  spell: 'https://www.dnd5eapi.co/api/spells/${index}/',
   /* ${index} = acid-arrow RETURNS:
     {
       "index": "acid-arrow",
@@ -64,7 +64,7 @@ export const endpoints = {
           "index": "acid",
           "name": "Acid",
           "url": "/api/damage-types/acid"
-          },
+        },
         "damage_at_slot_level": {
           "2": "4d4",
           "3": "5d4",
@@ -74,8 +74,8 @@ export const endpoints = {
           "7": "9d4",
           "8": "10d4",
           "9": "11d4"
-          }
-        },
+        }
+      },
       "school": {
         "index": "evocation",
         "name": "Evocation",
@@ -103,4 +103,24 @@ export const endpoints = {
       "url": "/api/spells/acid-arrow"
     }
   */
+  charSpells: 'https://www.dnd5eapi.co/api/classes/${charClass}/spells',
+  /* ${charClass} = warlock RETURNS:
+    {
+      "count": 64,
+      "results": [
+        {
+          "index": "chill-touch",
+          "name": "Chill Touch",
+          "url": "/api/spells/chill-touch"
+        },
+        {
+          "index": "eldritch-blast",
+          "name": "Eldritch Blast",
+          "url": "/api/spells/eldritch-blast"
+        }, {}, {} ...
+      ]
+    }
+  */
 }
+
+export default endpoints;

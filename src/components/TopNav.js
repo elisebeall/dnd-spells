@@ -1,5 +1,5 @@
 import '../css/TopNav.css';
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHatWizard } from 'react-icons/fa';
 
