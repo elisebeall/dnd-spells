@@ -1,9 +1,8 @@
 import React from 'react';
 import '../css/SpellDetails.css';
-import dataStub from '../testing/stub data.js';
+import dataStub from '../assets/stubData.js';
 
 const details = dataStub.spellDetails[0];
-
 
 const SpellDetails = ({}) => {
   console.log(details)
