@@ -10,7 +10,7 @@ const UserSpellbook = () => {
     const spells = savedSpells.map((spell) => {
         return (
             <div>
-                <Link to={`/my-spellbook/${spell.index}`} key={spell.index} > 
+                <Link to={`/spells/${spell.index}`} key={spell.index} > 
                     <Spell 
                     name={spell.name}
                     level={spell.level}
