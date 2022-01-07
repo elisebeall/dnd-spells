@@ -9,13 +9,16 @@ const SpellBox = () => {
 
     const spells = allSpells.map((spell) => {
         return (
-            <Link to={`/spells/${spell.index}`} key={spell.index} > 
-            <Spell 
-                name={spell.name}
-                level={spell.level}
-                school={spell.school.name}
-            />
-            </Link>
+            <div>
+                <Link to={`/spells/${spell.index}`} key={spell.index} > 
+                    <Spell 
+                    name={spell.name}
+                    level={spell.level}
+                    school={spell.school.name}
+                    />
+                </Link>
+                <Bookmark />
+            </div>
         )
     })
 
