@@ -1,15 +1,17 @@
 import '../css/CharClass.css';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Bookmark from './Bookmark';
 import charClassIcons from '../charClassIcons.js';
 
 const CharClass = ({ charClass }) => {
-  const image = `charClassIcons.${charClass.index}`;
+  const image = `${charClass.index}`;
 
   return (
     <div className="char-class-card">
+      <Bookmark />
       <Link to={charClass.index}>
-        <img src={image} alt={`${charClass.name}`} />
+        <img src={charClassIcons.squizard} alt={`${charClass.name}`} />
         <h3>{charClass.name}</h3>
       </Link>
     </div>
