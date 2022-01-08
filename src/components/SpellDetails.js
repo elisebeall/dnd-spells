@@ -2,10 +2,9 @@ import React from 'react';
 import '../css/SpellDetails.css';
 import dataStub from '../testing/stub data.js';
 
-const details = dataStub.spellDetails[0];
-
-
 const SpellDetails = ({}) => {
+  
+  const details = dataStub.spellDetails[0];
 
   return(
     <div className='individual-spell'>
