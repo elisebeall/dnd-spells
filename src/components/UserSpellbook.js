@@ -10,7 +10,7 @@ const UserSpellbook = () => {
 
     const displaySpells = savedSpells.map((spell) => {
         return (
-            <div key={spell.index}>
+            <div key={spell.index} className="singleSpell">
             <Link to={`/my-spellbook/${spell.index}`} > 
                 <Spell 
                 name={spell.name}
@@ -22,7 +22,8 @@ const UserSpellbook = () => {
     })
 
     return (
-        <div>
+        <div className="spellBox">
+            <h2>My Saved Spells</h2>
             {displaySpells}    
         </div>
     )
