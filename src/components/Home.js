@@ -1,5 +1,5 @@
 import '../css/Home.css';
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { GiBlackBook } from 'react-icons/gi';
 import { FaHatWizard } from 'react-icons/fa';
