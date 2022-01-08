@@ -9,7 +9,8 @@ import endpoints from '../endpoints.js';
 
 const SpellBox = () => {
   const charClass = useParams().class;
-  const {data: charSpells, isLoading, error} = useFetch(`https://www.dnd5eapi.co/api/classes/${charClass}/spells`);
+  const {data, isLoading, error} = useFetch(`https://www.dnd5eapi.co/api/classes/${charClass}/spells`);
+  const charSpells = data?.results;
 
   let spells;
   

@@ -5,7 +5,8 @@ import useFetch from '../hooks/useFetch';
 import endpoints from '../endpoints.js';
 
 const CharClassBox = () => {
-  const {data: classes, isLoading, error} = useFetch(endpoints.classes);
+  const {data, isLoading, error} = useFetch(endpoints.classes);
+  const classes = data?.results;
 
   return (
     <div className="char-class-box">
