@@ -12,8 +12,8 @@ const UserSpellbook = () => {
 
     const displaySpells = savedSpells.map((spell) => {
         return (
-            <div>
-            <Link to={`/my-spellbook/${spell.index}`} key={spell.index} > 
+            <div key={spell.index}>
+            <Link to={`/my-spellbook/${spell.index}`} > 
                 <Spell 
                 name={spell.name}
                 />
