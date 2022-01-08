@@ -8,37 +8,37 @@ import useFetch from '../hooks/useFetch';
 import endpoints from '../endpoints.js';
 
 const SpellBox = () => {
-    const charClass = useParams().class;
-    const {data: charSpells, isLoading, error} = useFetch(`https://www.dnd5eapi.co/api/classes/${charClass}/spells`);
+  const charClass = useParams().class;
+  const {data: charSpells, isLoading, error} = useFetch(`https://www.dnd5eapi.co/api/classes/${charClass}/spells`);
 
-    let spells;
-    
-    if (!isLoading) {
-        spells = charSpells.map((spell) => {
-        return (
-            <div key={spell.index} className="singleSpell">
-            <Link to={`/${charClass}/${spell.index}`} > 
-                <Spell 
-                name={spell.name}
-                />
-            </Link>
-            <Bookmark />
-            </div>
-        )
+  let spells;
+  
+  if (!isLoading) {
+    spells = charSpells.map((spell) => {
+      return (
+        <div key={spell.index} className="singleSpell">
+          <Link to={`/spells/${spell.index}`} > 
+              <Spell 
+              name={spell.name}
+              />
+          </Link>
+          <Bookmark />
+        </div>
+      )
     })
-}
+  }
 
   return (
     <div className="spellBox">
-        {error ? <>{error}</> :
-        <>
-          {isLoading ? <>loading...</> :
-            <>
-            {spells}
-            </>
-          }
-        </>
+      {error ? <>{error}</> :
+      <>
+        {isLoading ? <>loading...</> :
+          <>
+          {spells}
+          </>
         }
+      </>
+      }
     </div>
   )
 }

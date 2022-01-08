@@ -12,7 +12,7 @@ const CharClass = ({ charClass }) => {
   return (
     <div className="char-class-card">
       <Bookmark />
-      <Link to={`/spells/${index}`}>
+      <Link to={`/${index}/spells`}>
         <img src={icon} alt={`${name}`} />
         <h3>{name}</h3>
       </Link>
