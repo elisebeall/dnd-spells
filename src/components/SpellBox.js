@@ -16,8 +16,8 @@ const SpellBox = () => {
     if (!isLoading) {
         spells = charSpells.map((spell) => {
         return (
-            <div>
-            <Link to={`/${charClass}/${spell.index}`} key={spell.index} > 
+            <div key={spell.index}>
+            <Link to={`/${charClass}/${spell.index}`} > 
                 <Spell 
                 name={spell.name}
                 />
