@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import dataStub from "../assets/stubData.js"; //Remove when we get data from App or context.
 import { Link, useParams } from "react-router-dom";
 import Spell from "./Spell";
 import Bookmark from "./Bookmark"

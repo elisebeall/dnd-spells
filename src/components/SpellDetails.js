@@ -6,10 +6,7 @@ import useFetch from '../hooks/useFetch';
 const SpellDetails = ({}) => {
   const spellIndex = useParams().index;
   const { data: details, isLoading, error } = useFetch(`https://www.dnd5eapi.co/api/spells/${spellIndex}`)
-  // const { name, level, range, casting_time, components, duration, school, material, desc } = details;
-  
-  console.log(details);
-  
+    
   return(
     <>
       {isLoading ? <>loading...</> :

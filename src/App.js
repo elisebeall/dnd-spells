@@ -8,7 +8,6 @@ import UserSpellbook from './components/UserSpellbook';
 import SpellBox from './components/SpellBox';
 import SpellDetails from './components/SpellDetails';
 
-
 const App = () => {
   return (
     <>

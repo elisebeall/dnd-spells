@@ -10,9 +10,9 @@ const CharClassBox = () => {
 
   return (
     <div className="char-class-box">
-      {error ? <>{error}</> :
+      {isLoading ? <>loading...</> :
         <>
-          {isLoading ? <>loading...</> :
+          {error ? <>{error}</> :
             <>
               {classes.map(charClass => <CharClass charClass={charClass} key={charClass.index}/>)}
             </>

@@ -3,7 +3,6 @@ import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Bookmark from './Bookmark';
 import useIcon from '../hooks/useIcon';
-import charClassIcons from '../charClassIcons.js';
 
 const CharClass = ({ charClass }) => {
   const { index, name } = charClass;
