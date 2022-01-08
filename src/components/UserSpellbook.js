@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import Spell from "./Spell";
 import Bookmark from "./Bookmark"
 import "../css/UserSpellbook.css";
-import useFetch from '../hooks/useFetch';
-import endpoints from '../endpoints.js';
 
 const UserSpellbook = () => {
     const savedSpells = dataStub.spellDetails;

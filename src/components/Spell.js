@@ -3,7 +3,7 @@ import "../css/Spell.css";
 
 const Spell = ({ name }) => {
   return (
-    <div>
+    <div className="spell">
       <h4>{`💥 ${name}`}</h4>
     </div>
   )
