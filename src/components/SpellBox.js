@@ -4,19 +4,22 @@ import { Link } from "react-router-dom";
 import Spell from "./Spell";
 import Bookmark from "./Bookmark"
 import "../css/SpellBox.css";
+import useFetch from '../hooks/useFetch';
+import endpoints from '../endpoints.js';
 
 const SpellBox = () => {
     const allSpells = dataStub.spellDetails;
 
     const spells = allSpells.map((spell) => {
         return (
+            <div>
             <Link to={`/spells/${spell.index}`} key={spell.index} > 
                 <Spell 
                 name={spell.name}
-                level={spell.level}
-                school={spell.school.name}
                 />
             </Link>
+            <Bookmark />
+            </div>
         )
     })
 
