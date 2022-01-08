@@ -13,7 +13,7 @@ const CharClassBox = () => {
         <>
           {isLoading ? <>loading...</> :
             <>
-              {classes.map(charClass => <CharClass charClass={charClass} />)}
+              {classes.map(charClass => <CharClass charClass={charClass} key={charClass.index}/>)}
             </>
           }
         </>

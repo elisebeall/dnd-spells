@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import dataStub from "../assets/stubData.js"; //Remove when we get data from App or context.
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Spell from "./Spell";
 import Bookmark from "./Bookmark"
 import "../css/SpellBox.css";
@@ -8,12 +8,14 @@ import useFetch from '../hooks/useFetch';
 import endpoints from '../endpoints.js';
 
 const SpellBox = () => {
-    const allSpells = dataStub.spellDetails;
+    // const allSpells = dataStub.spellDetails;
+    const charClass = useParams().class;
+    const {data: charSpells, isLoading, error} = useFetch(`https://www.dnd5eapi.co/api/classes/${charClass}/spells`);
 
-    const spells = allSpells.map((spell) => {
+    const spells = charSpells.map((spell) => {
         return (
             <div>
-            <Link to={`/spells/${spell.index}`} key={spell.index} > 
+            <Link to={`/${charClass}/${spell.index}`} key={spell.index} > 
                 <Spell 
                 name={spell.name}
                 />
@@ -24,9 +26,15 @@ const SpellBox = () => {
     })
 
   return (
-    <>
-      {spells}
-    </>
+    <div>
+        {error ? <>{error}</> :
+        <>
+          {isLoading ? <>loading...</> :
+            {spells}
+          }
+        </>
+        }
+    </div>
   )
 }
 
