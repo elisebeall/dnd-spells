@@ -1,0 +1,20 @@
+.individual-spell {
+  border: 1px solid red;
+  width: 50vw;
+  padding-left: 16px;
+  margin: 25px;
+}
+
+p {
+  padding-top: 8px;
+}
+
+.details {
+  display: flex;
+  border: 1px solid red;
+  font-weight: bold;
+}
+
+.materials {
+  
+}

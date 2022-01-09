@@ -1,0 +1,12 @@
+.char-class-card {
+  font-family: 'oblivion';
+  font-size: 3rem;
+  text-align: center;
+  border: 5px solid black;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+img {
+  width: 10rem;
+}

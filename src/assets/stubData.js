@@ -607,3 +607,5 @@ const dataStub = {
     }
   ]
 }
+
+export default dataStub;
