@@ -22,7 +22,7 @@ const SpellBox = () => {
               name={spell.name}
               />
           </Link>
-          <Bookmark />
+          <Bookmark spell={spell}/>
         </div>
       )
     })
@@ -34,7 +34,7 @@ const SpellBox = () => {
       <>
         {isLoading ? <>loading...</> :
           <>
-          {spells}
+            {spells}
           </>
         }
       </>
