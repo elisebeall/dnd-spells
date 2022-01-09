@@ -8,7 +8,7 @@ const Bookmark = ({ spell }) => {
   const [ isBookmarked, setIsBookmarked ] = useState(false);
   const { bookmarks, setBookmarks } = useContext(UserSpellbookContext);
 
-  const indexOfSpell = bookmarks.indexOf(spell)
+  const isIncluded = bookmarks.includes(spell)
 
   const addBookmark = () => {
     setIsBookmarked(true);
@@ -22,7 +22,7 @@ const Bookmark = ({ spell }) => {
 
   return (
     <>
-      {indexOfSpell !== -1 ?
+      {isIncluded ?
         <ActiveBookmark onClick={e => removeBookmark()}/> :
         <InactiveBookmark onClick={e => addBookmark()}/>
       }
