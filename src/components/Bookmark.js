@@ -17,12 +17,12 @@ const Bookmark = ({ spell }) => {
 
   const removeBookmark = () => {
     setIsBookmarked(false);
-    bookmarks.splice(indexOfSpell)
+    setBookmarks(bookmarks.filter(bookmark => bookmark.index !== spell.index))
   }
 
   return (
     <>
-      {findSpellInBookmarks ?
+      {indexOfSpell !== -1 ?
         <ActiveBookmark onClick={e => removeBookmark()}/> :
         <InactiveBookmark onClick={e => addBookmark()}/>
       }
@@ -31,8 +31,3 @@ const Bookmark = ({ spell }) => {
 }
 
 export default Bookmark;
-
-
-//On bookmark click,
-//change the bookmark to the filled in state
-//add the spell to the bookmarks array
