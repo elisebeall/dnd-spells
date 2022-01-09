@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import dataStub from "../assets/stubData"; //Remove when we get bookmarked spells data from state
 import { Link } from "react-router-dom";
 import Spell from "./Spell";
 import Bookmark from "./Bookmark"
@@ -12,7 +11,7 @@ const UserSpellbook = () => {
   const displaySpells = bookmarks.map((spell) => {
     return (
       <div key={spell.index} className="singleSpell">
-      <Link to={`/my-spellbook/${spell.index}`} > 
+      <Link to={`/spells/${spell.index}`} > 
         <Spell 
           name={spell.name}
         />
