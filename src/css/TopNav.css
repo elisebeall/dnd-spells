@@ -1,6 +1,7 @@
 header {
-  background-color: purple;
-  padding: 10px 40px 10px 40px;
+  /* background-color: #6F1D1B; */
+  background-image: linear-gradient(#F0E1BB, #DFA03F, #511012);
+  padding: 2.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -21,7 +22,7 @@ h1 {
   font-family: 'oblivion';
   text-align: center;
   font-size: 1.8rem;
-  border: 1px solid white;
+  border: 1px solid #F0E1BB;
   border-radius: 7px;
   width: 45%;
   padding: 2rem 0 2rem 0;
@@ -30,11 +31,11 @@ h1 {
 }
 
 .top-nav-btn:hover {
-  background-color: white;
+  background-color: #F0E1BB;
 }
 
 .top-nav-btn:active {
-  background-color: white;
+  background-color: #F0E1BB;
 }
 
 .icon-small {
