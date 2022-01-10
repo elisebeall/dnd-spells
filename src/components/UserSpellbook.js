@@ -1,32 +1,32 @@
-import React from "react";
-import dataStub from "../assets/stubData"; //Remove when we get bookmarked spells data from state
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Spell from "./Spell";
 import Bookmark from "./Bookmark"
+import { UserSpellbookContext } from "../contexts/UserSpellbookContext";
 import "../css/UserSpellbook.css";
 
 const UserSpellbook = () => {
-    const savedSpells = dataStub.spellDetails;
+  const { bookmarks, setBookmarks } = useContext(UserSpellbookContext);
 
-    const displaySpells = savedSpells.map((spell) => {
-        return (
-            <div key={spell.index} className="singleSpell">
-            <Link to={`/my-spellbook/${spell.index}`} > 
-                <Spell 
-                name={spell.name}
-                />
-            </Link>
-            <Bookmark />
-            </div>
-        )
-    })
-
+  const displaySpells = bookmarks.map((spell) => {
     return (
-        <div className="spellBox">
-            <h2>My Saved Spells</h2>
-            {displaySpells}    
-        </div>
+      <div key={spell.index} className="singleSpell">
+      <Link to={`/spells/${spell.index}`} > 
+        <Spell 
+          name={spell.name}
+        />
+      </Link>
+      <Bookmark spell={spell}/>
+      </div>
     )
+  })
+
+  return (
+    <div className="spellBox">
+      <h2>My Saved Spells</h2>
+      {displaySpells}    
+    </div>
+  )
 }
 
 export default UserSpellbook;
