@@ -8,7 +8,7 @@ const SpellDetails = ({}) => {
   const { data: details, isLoading, error } = useFetch(`https://www.dnd5eapi.co/api/spells/${spellIndex}`)
     
   return(
-    <>
+    <div className="detailsBox">
       {isLoading ? <>loading...</> :
         <>
           {error ? <>{error}</> :
@@ -16,8 +16,8 @@ const SpellDetails = ({}) => {
               {     
                 <div className='individual-spell'>
                   <h3>{details.name}</h3>
-                  <p>Level: {details.level}</p>
                   <div className='details'>
+                    <p>Level: {details.level}</p>
                     <p>Range: {details.range}</p>
                     <p>Casting Time: {details.casting_time}</p>
                     <p>Components: {details.components}</p>
@@ -33,7 +33,7 @@ const SpellDetails = ({}) => {
           }
         </>
       }
-    </>
+    </div>
   )
 }
 

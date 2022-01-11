@@ -1,8 +1,19 @@
+.detailsBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .individual-spell {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 50vw;
   padding-left: 16px;
   margin: 25px;
+  font-size: large;
+  
 }
 
 p {
@@ -11,8 +22,11 @@ p {
 
 .details {
   display: flex;
-  border: 1px solid red;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border-bottom: 1px solid red; */
   font-weight: bold;
+  margin: 10%;
 }
 
 .materials {
