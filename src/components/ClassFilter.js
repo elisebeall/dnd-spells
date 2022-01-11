@@ -4,7 +4,7 @@ import "../css/ClassFilter.css"
 
 const ClassFilter = () => {
     return (
-        <nav>
+        <nav className="classNav">
             <NavLink to={"/bard/spells"}>Bard</NavLink>
             <NavLink to={"/cleric/spells"}>Cleric</NavLink>
             <NavLink to={"/druid/spells"}>Druid</NavLink>

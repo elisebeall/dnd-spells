@@ -35,9 +35,9 @@ const SpellBox = () => {
       {error ? <>{error}</> :
       <>
         {isLoading ? <>loading...</> :
-          <>
+          <div className="spellContainer">
             {spells}
-          </>
+          </div>
         }
       </>
       }

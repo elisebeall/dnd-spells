@@ -1,12 +1,18 @@
 .spellBox {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 10%;
     padding: 5%;
     font-family: 'oblivion';
     /* border: 4px none;
     border-color: black; */
+}
+
+.spellContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .singleSpell {
