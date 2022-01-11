@@ -4,16 +4,16 @@
     justify-content: space-around;
     margin: 10%;
     padding: 5%;
-    border: 5px solid black;
+    font-family: 'oblivion';
+    /* border: 4px none;
+    border-color: black; */
 }
 
 .singleSpell {
     display: flex;
     justify-content: space-between;
-    font-size: large;
+    font-size: x-large;
     width: 80%;
-    padding: 5%;
-    margin: 5%;
-    background-color: rgb(239, 204, 253);
-    
+    padding: 1%;
+    border-bottom: 3px solid #DFA03F;
 }
