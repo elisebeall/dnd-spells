@@ -11,10 +11,17 @@
     font-size: 120%;
     padding: 10% 5%;
     background-color: #511012; 
-    /* background-image: linear-gradient(#511012, #DFA03F); */
     color: #F0E1BB;
-    width: inherit;
+    width: 50%;
     text-align: center;
     border-bottom: 3px solid #DFA03F;
-    /* border-color: #DFA03F */
+}
+
+.classLink:hover {
+    background-color: #F0E1BB;
+    color: #511012; 
+}
+
+.active {
+    color: #DFA03F;
 }
