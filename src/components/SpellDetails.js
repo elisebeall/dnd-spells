@@ -16,15 +16,36 @@ const SpellDetails = ({}) => {
               {     
                 <div className='individual-spell'>
                   <h3>{details.name}</h3>
-                  <div className='details'>
-                    <p>Level: {details.level}</p>
-                    <p>Range: {details.range}</p>
-                    <p>Casting Time: {details.casting_time}</p>
-                    <p>Components: {details.components}</p>
-                    <p>Duration: {details.duration}</p>
-                    <p>School Name: {details.school.name}</p>
-                  </div>
-                  <p className='materials'>Materials: {details.material}</p>
+                  <table className='details'>
+                    <tr>
+                      <th>Level:</th>
+                      <td>{details.level}</td>
+                    </tr>
+                    <tr>
+                      <th>Range:</th>
+                      <td>{details.range}</td>
+                    </tr>
+                    <tr>
+                      <th>Casting Time:</th>
+                      <td>{details.casting_time}</td>
+                    </tr>
+                    <tr>
+                      <th>Components:</th>
+                      <td>{details.components}</td>
+                    </tr>
+                    <tr>
+                      <th>Duration:</th>
+                      <td>{details.duration}</td>
+                    </tr>
+                    <tr>
+                      <th>School Name:</th>
+                      <td>{details.school.name}</td>
+                    </tr>
+                    <tr>
+                      <th>Materials:</th>
+                      <td>{details.material}</td>
+                    </tr>
+                  </table>
                   <p className='description'>Description: {details.desc}</p>
                   <button className='go-back'>Go Back</button>
                 </div>
