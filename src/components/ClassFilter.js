@@ -13,6 +13,7 @@ const ClassFilter = () => {
             <NavLink to={"/sorcerer/spells"}>Sorcerer</NavLink>
             <NavLink to={"/warlock/spells"}>Warlock</NavLink>
             <NavLink to={"/wizard/spells"}>Wizard</NavLink>
+            <NavLink to={"/class"}>All Classes</NavLink>
         </nav>
     )
 }

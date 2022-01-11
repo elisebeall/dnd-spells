@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import { Link, useParams } from "react-router-dom";
 import Spell from "./Spell";
-import Bookmark from "./Bookmark"
+import Bookmark from "./Bookmark";
+import ClassFilter from "./ClassFilter";
 import "../css/SpellBox.css";
 import useFetch from '../hooks/useFetch';
 import endpoints from '../endpoints.js';
@@ -30,6 +31,7 @@ const SpellBox = () => {
 
   return (
     <div className="spellBox">
+      <ClassFilter />
       {error ? <>{error}</> :
       <>
         {isLoading ? <>loading...</> :
