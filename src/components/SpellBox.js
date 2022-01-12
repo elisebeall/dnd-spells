@@ -36,10 +36,7 @@ const SpellBox = () => {
         <>
            {error ? <>{error}</> :
             <div className="spellContainer">
-                <>
-                  {spells && <MuggleMessage charClass={charClass.name} />}
-                </>
-              }
+                  {!spells ? <MuggleMessage charClass={charClass} /> : spells}
             </div>
           }
         </>
