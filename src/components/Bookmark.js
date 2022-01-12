@@ -7,7 +7,7 @@ import { UserSpellbookContext } from '../contexts/UserSpellbookContext';
 const Bookmark = ({ spell }) => {
   const { bookmarks, dispatch } = useContext(UserSpellbookContext);
 
-  const isBookmarked = bookmarks.includes(spell);
+  const isBookmarked = bookmarks.find(bookmark => bookmark.index === spell.index);
 
   // const addBookmark = () => {
   //   console.log('addBookmark method, isBookmarked var', isBookmarked)
@@ -26,7 +26,7 @@ const Bookmark = ({ spell }) => {
   return (
     <div className="bookmark">
       {isBookmarked ?
-        <ActiveBookmark onClick={e => dispatch({ type: 'REMOVE_BOOKMARK', spell })} /> :
+        <ActiveBookmark onClick={e => dispatch({ type: 'REMOVE_BOOKMARK', id: spell.id })} /> :
         <InactiveBookmark onClick={e => dispatch({ type: 'ADD_BOOKMARK', spell })}/>
       }
     </div>

@@ -14,7 +14,7 @@ const SpellBox = () => {
 
   let spells;
   if (!isLoading) {
-    charSpells.map(spell => {
+    spells = charSpells.map(spell => {
       return (
         <div key={spell.index} className="singleSpell">
           <Link to={`/spells/${spell.index}`} >
