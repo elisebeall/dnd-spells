@@ -1,18 +1,24 @@
-// import stubData from './src/assets/stubData.js';
+import stubData from '../../../src/assets/stubData';
 
 describe('Squizards Spells functionality', () => {
   beforeEach(() => {
+    cy.intercept('GET', 'https://www.dnd5eapi.co/api/', {
+      statusCode: 200,
+      ok: true,
+      body: { stubData }
+    })
     cy.visit('localhost:3000')
+    
   })
 
-  it.skip('should display a nav bar', () => {
+  it('should display a nav bar', () => {
     cy.get('header')
       .get('h1')
       .contains("Squizard's Spells")
 
     })
   
-  it.skip('should display two options to click on', () => {
+  it('should display two options to click on', () => {
     cy.get('main')
       .get('.home-nav')
       .contains('Browse Spells')
@@ -22,14 +28,14 @@ describe('Squizards Spells functionality', () => {
       .contains('My Spellbook')
   })
 
-  it.skip('should display the classes that spells can be filtered by', () => {
+  it('should display the classes that spells can be filtered by', () => {
     cy.get('main')
       .get('.home-nav:first')
       .click()
       .url().should('include', 'class')
   })
 
-  it.skip('should allow users to sort spells by class', () => {
+  it('should allow users to sort spells by class', () => {
     cy.get('main')
       .get('.home-nav:first')
       .click()
@@ -48,7 +54,7 @@ describe('Squizards Spells functionality', () => {
       .contains('Dancing Lights')
   })
 
-  it.skip('should allow users to sort spells by a different class', () => {
+  it('should allow users to sort spells by a different class', () => {
     cy.get('main')
       .get('.home-nav:first')
       .click()
@@ -67,7 +73,7 @@ describe('Squizards Spells functionality', () => {
       .contains('Guidance')
   })
 
-  it.skip('should allow the user to see all spell details when each spell is clicked on', () => {
+  it('should allow the user to see all spell details when each spell is clicked on', () => {
     cy.visit('http://localhost:3000/spells/guidance')
 
     cy.get('body')
