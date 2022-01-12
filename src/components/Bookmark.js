@@ -5,26 +5,15 @@ import { FaRegBookmark as InactiveBookmark } from 'react-icons/fa';
 import { UserSpellbookContext } from '../contexts/UserSpellbookContext';
 
 const Bookmark = ({ spell }) => {
-  const [ isBookmarked, setIsBookmarked ] = useState(false);
-  const { bookmarks, setBookmarks } = useContext(UserSpellbookContext);
+  const { bookmarks, dispatch } = useContext(UserSpellbookContext);
 
-  const isIncluded = bookmarks.includes(spell)
-
-  const addBookmark = () => {
-    setIsBookmarked(true);
-    setBookmarks([...bookmarks, spell])
-  }
-
-  const removeBookmark = () => {
-    setIsBookmarked(false);
-    setBookmarks(bookmarks.filter(bookmark => bookmark.index !== spell.index))
-  }
+  const isBookmarked = bookmarks.find(bookmark => bookmark.index === spell.index);
 
   return (
     <div className="bookmark">
       {isBookmarked ?
-        <ActiveBookmark onClick={e => removeBookmark()}/> :
-        <InactiveBookmark onClick={e => addBookmark()}/>
+        <ActiveBookmark onClick={e => dispatch({ type: 'REMOVE_BOOKMARK', index: spell.index })} /> :
+        <InactiveBookmark onClick={e => dispatch({ type: 'ADD_BOOKMARK', spell })} />
       }
     </div>
   )

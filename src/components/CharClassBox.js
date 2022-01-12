@@ -1,6 +1,7 @@
 import '../css/CharClassBox.css';
 import { Fragment } from 'react';
 import CharClass from './CharClass';
+import Loading from './Loading';
 import useFetch from '../hooks/useFetch';
 import endpoints from '../endpoints.js';
 
@@ -10,7 +11,7 @@ const CharClassBox = () => {
 
   return (
     <div className="char-class-box">
-      {isLoading ? <>loading...</> :
+      {isLoading ? <Loading /> :
         <>
           {error ? <>{error}</> :
             <>
