@@ -1,10 +1,11 @@
 import React from 'react';
+import '../css/MuggleMessage.css'
 
 const MuggleMessage = ({ charClass }) => {
   return (
-   <section>
-    <h3>{`Squizzard is sorry, ${charClass}s don't get to do any magic!`}</h3>
-    <h4>Maybe go find some rocks to throw at the goblins...</h4>
+   <section className='message'>
+    <h2>{`Squizzard is sorry, ${charClass}s don't get to do any magic!`}</h2>
+    <h3>Maybe go find some rocks to throw at the goblins...</h3>
    </section>
   )
 }
