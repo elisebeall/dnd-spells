@@ -4,9 +4,9 @@ import Spell from './Spell';
 import Bookmark from './Bookmark';
 import ClassFilter from './ClassFilter';
 import Loading from './Loading';
+import MuggleMessage from './MuggleMessage';
 import '../css/SpellBox.css';
 import useFetch from '../hooks/useFetch';
-import endpoints from '../endpoints.js';
 
 const SpellBox = () => {
   const charClass = useParams().class;
@@ -36,7 +36,10 @@ const SpellBox = () => {
         <>
            {error ? <>{error}</> :
             <div className="spellContainer">
-              {spells}
+                <>
+                  {spells && <MuggleMessage charClass={charClass.name} />}
+                </>
+              }
             </div>
           }
         </>
