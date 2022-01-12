@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { useParams } from 'react-router-dom'
+import ClassFilter from './ClassFilter';
 import '../css/SpellDetails.css';
 import useFetch from '../hooks/useFetch';
 
@@ -9,6 +10,7 @@ const SpellDetails = ({}) => {
     
   return(
     <div className="detailsBox">
+      <ClassFilter />
       {isLoading ? <>loading...</> :
         <>
           {error ? <>{error}</> :
@@ -47,7 +49,6 @@ const SpellDetails = ({}) => {
                     </tr>
                   </table>
                   <p className='description'>Description: {details.desc}</p>
-                  <button className='go-back'>Go Back</button>
                 </div>
               }
             </>
