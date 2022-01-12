@@ -1,6 +1,6 @@
-# FitLit Tracker
+# Squizard's Spells
 
-### Mod2 2108 Group Project
+### Mod3 Group Stretch Tech Project
 
 ## Table of Contents
 - [Abstract](#Abstract)
@@ -11,11 +11,9 @@
 - [Challenges](#Challenges)
 - [Additions](#Additions)
 - [Contributors](#Contributors)
-- [Specs](#Specs)
-- [Demo](#Demo)
 
 ## Abstract
-FitLit Tracker is an app that allows the user to track their health statistics.  The user can view their steps taken, water consumed, quantity and quality of their sleep, and steps climbed.  They can also compare their stats to their friend's stats and also the average of all users in the database. A user can also add data to their profile 
+Squizard's Spells is an app that allows its users to filter through Dungeons and Dragons 5th Edition spells and save those spells in a personal spellbook. Spells saved will persist on page load as well. When a user reaches the site, they will be able to look at their personal spellbook or browse spells. Then they can choose the character class that they are playing to narrow it down to spells that that class can use. Players can then click on spells to get the full details or bookmark them to save them to their spellbook.
 
 ## Technologies
 -  HTML
@@ -52,7 +50,3 @@ FitLit Tracker is an app that allows the user to track their health statistics. 
 - [August Reid](https://github.com/augustreid)
 - [Brian Peterson](https://github.com/bpeterson2579)
 - [Elise Beall](https://github.com/elisebeall)
-
-## Specs
-Project specs can be found here
--  [FitLit](https://frontend.turing.edu/projects/Fitlit-part-two.html)
