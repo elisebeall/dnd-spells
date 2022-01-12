@@ -5,14 +5,14 @@ describe('Squizards Spells functionality', () => {
     cy.visit('localhost:3000')
   })
 
-  it('should display a nav bar', () => {
+  it.skip('should display a nav bar', () => {
     cy.get('header')
       .get('h1')
       .contains("Squizard's Spells")
 
     })
   
-  it('should display two options to click on', () => {
+  it.skip('should display two options to click on', () => {
     cy.get('main')
       .get('.home-nav')
       .contains('Browse Spells')
@@ -22,14 +22,14 @@ describe('Squizards Spells functionality', () => {
       .contains('My Spellbook')
   })
 
-  it('should display the classes that spells can be filtered by', () => {
+  it.skip('should display the classes that spells can be filtered by', () => {
     cy.get('main')
       .get('.home-nav:first')
       .click()
       .url().should('include', 'class')
   })
 
-  it('should allow users to sort spells by class', () => {
+  it.skip('should allow users to sort spells by class', () => {
     cy.get('main')
       .get('.home-nav:first')
       .click()
@@ -48,7 +48,7 @@ describe('Squizards Spells functionality', () => {
       .contains('Dancing Lights')
   })
 
-  it('should allow users to sort spells by a different class', () => {
+  it.skip('should allow users to sort spells by a different class', () => {
     cy.get('main')
       .get('.home-nav:first')
       .click()
@@ -67,27 +67,27 @@ describe('Squizards Spells functionality', () => {
       .contains('Guidance')
   })
 
-  it('should allow the user to see all spell details when each spell is clicked on', () => {
-    cy.get('main')
-    .get('.home-nav:first')
-    .click()
+  it.skip('should allow the user to see all spell details when each spell is clicked on', () => {
+    cy.visit('http://localhost:3000/spells/guidance')
 
-  cy.get('body')
-    .get('div')
-    .get('div')
-    .get('.char-class-card')
-    .contains('Cleric')
-    .click()
+    cy.get('body')
+      .get('div')
+      .get('div')
+      .contains('Guidance')
+  })
 
-  cy.get('body')
-    .get('div')
-    .get('div')
-    .get('.spellBox:first')
-    .contains('Guidance')
-    .click()
+  it('should allow users to bookmark spells from the class page', () => {
+    cy.visit('http://localhost:3000/sorcerer/spells')
+      .get('.spellContainer')
+      .get('.spellBox')
+      .get('div')
+      .get('.bookmark:first')
+      .click()
 
-  cy.get('body')
-    .get('div')
-    .get('div')
+    cy.visit('http://localhost:3000/sorcerer/spells')
+      .get('div')
+      .get('div')
+      .get('.singleSpell')
+      .contains('Acid Splash')
   })
 })
