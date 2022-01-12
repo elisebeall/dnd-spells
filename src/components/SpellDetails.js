@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import ClassFilter from './ClassFilter';
 import '../css/SpellDetails.css';
 import Bookmark from './Bookmark';
+import Loading from './Loading';
 import useFetch from '../hooks/useFetch';
 import endpoints from '../endpoints.js';
 
@@ -18,7 +19,7 @@ const SpellDetails = () => {
   return(
     <div className="detailsBox">
       <ClassFilter />
-      {isLoading ? <>loading...</> :
+      {isLoading ? <Loading /> :
         <>
           {error ? <>{error}</> :
             <>

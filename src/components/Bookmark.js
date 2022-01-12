@@ -9,25 +9,11 @@ const Bookmark = ({ spell }) => {
 
   const isBookmarked = bookmarks.find(bookmark => bookmark.index === spell.index);
 
-  // const addBookmark = () => {
-  //   console.log('addBookmark method, isBookmarked var', isBookmarked)
-  //   console.log('addBookmark method, bookmarks array', bookmarks)
-  //
-  //   //setBookmarks([...bookmarks, spell]);
-  // }
-  //
-  // const removeBookmark = () => {
-  //   console.log('removeBookmark method, isBookmarked var', isBookmarked)
-  //   console.log('removeBookmark method, bookmarks array', bookmarks)
-  //
-  //   //setBookmarks(bookmarks.filter(bookmark => bookmark.index !== spell.index));
-  // }
-
   return (
     <div className="bookmark">
       {isBookmarked ?
-        <ActiveBookmark onClick={e => dispatch({ type: 'REMOVE_BOOKMARK', id: spell.id })} /> :
-        <InactiveBookmark onClick={e => dispatch({ type: 'ADD_BOOKMARK', spell })}/>
+        <ActiveBookmark onClick={e => dispatch({ type: 'REMOVE_BOOKMARK', index: spell.index })} /> :
+        <InactiveBookmark onClick={e => dispatch({ type: 'ADD_BOOKMARK', spell })} />
       }
     </div>
   )

@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <main>
       <Link className="home-nav" to="/class">
-        <FaHatWizard className="icon-large"/>
+        <FaHatWizard className="icon-large" />
         <h3>Browse Spells</h3>
       </Link>
       <Link className="home-nav" to="/my-spellbook">
