@@ -4,14 +4,15 @@ import ClassFilter from './ClassFilter';
 import '../css/SpellDetails.css';
 import Bookmark from './Bookmark';
 import useFetch from '../hooks/useFetch';
+import endpoints from '../endpoints.js';
 
-const SpellDetails = ({}) => {
+const SpellDetails = () => {
   const spellIndex = useParams().index;
-  const { data: details, isLoading, error } = useFetch(`https://www.dnd5eapi.co/api/spells/${spellIndex}`)
+  const { data: details, isLoading, error } = useFetch(endpoints.spells+`${spellIndex}`)
   let spell;
 
   if (!isLoading) {
-   spell = {"index": details.index, "name": details.name, "url": `https://www.dnd5eapi.co/api/spells/${spellIndex}`}
+   spell = {"index": details.index, "name": details.name, "url": endpoints.spells+`${spellIndex}`}
   }
 
   return(
@@ -21,7 +22,7 @@ const SpellDetails = ({}) => {
         <>
           {error ? <>{error}</> :
             <>
-              {     
+              {
                 <div className='individual-spell'>
                   <Bookmark spell={spell}/>
                   <h3>{details.name}</h3>

@@ -1,22 +1,22 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Spell from "./Spell";
-import Bookmark from "./Bookmark"
+import Bookmark from "./Bookmark";
 import { UserSpellbookContext } from "../contexts/UserSpellbookContext";
 import "../css/UserSpellbook.css";
 
 const UserSpellbook = () => {
-  const { bookmarks, setBookmarks } = useContext(UserSpellbookContext);
+  const { bookmarks } = useContext(UserSpellbookContext);
 
-  const displaySpells = bookmarks.map((spell) => {
+  const displaySpells = bookmarks.map(spell => {
     return (
       <div key={spell.index} className="singleSpell">
-      <Link to={`/spells/${spell.index}`} > 
-        <Spell 
-          name={spell.name}
-        />
-      </Link>
-      <Bookmark spell={spell}/>
+        <Link to={`/spells/${spell.index}`} >
+          <Spell
+            name={spell.name}
+          />
+        </Link>
+        <Bookmark spell={spell}/>
       </div>
     )
   })
@@ -24,7 +24,7 @@ const UserSpellbook = () => {
   return (
     <div className="spellBook">
       <h2>My Saved Spells</h2>
-      {displaySpells}    
+      {displaySpells}
     </div>
   )
 }
