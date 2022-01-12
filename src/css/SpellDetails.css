@@ -1,20 +1,27 @@
-.individual-spell {
-  border: 1px solid red;
-  width: 50vw;
-  padding-left: 16px;
-  margin: 25px;
+.detailsBox {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-p {
-  padding-top: 8px;
+.individual-spell {
+  border: 3px solid #DFA03F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+  font-size: large;
+  margin: 5%;
+  padding: 4%;
 }
 
 .details {
   display: flex;
-  border: 1px solid red;
-  font-weight: bold;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5%;
 }
 
-.materials {
-  
+tr {
+  margin: 1%;
 }

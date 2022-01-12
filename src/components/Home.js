@@ -8,11 +8,11 @@ const Home = () => {
   return (
     <main>
       <Link className="home-nav" to="/class">
-        <GiBlackBook className="icon-large" />
+        <FaHatWizard className="icon-large"/>
         <h3>Browse Spells</h3>
       </Link>
       <Link className="home-nav" to="/my-spellbook">
-        <FaHatWizard className="icon-large"/>
+        <GiBlackBook className="icon-large" />
         <h3>My Spellbook</h3>
       </Link>
     </main>

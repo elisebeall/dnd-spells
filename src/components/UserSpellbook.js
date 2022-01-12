@@ -22,7 +22,7 @@ const UserSpellbook = () => {
   })
 
   return (
-    <div className="spellBox">
+    <div className="spellBook">
       <h2>My Saved Spells</h2>
       {displaySpells}    
     </div>

@@ -27,6 +27,10 @@ html {
   font-size: 15px;
 }
 
+body {
+  background-image: url(https://wallpaperaccess.com/full/2796640.jpg);
+}
+
 * {
   margin: 0;
 }
