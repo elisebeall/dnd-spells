@@ -21,12 +21,12 @@ const Bookmark = ({ spell }) => {
   }
 
   return (
-    <>
+    <div className="bookmark">
       {isBookmarked ?
         <ActiveBookmark onClick={e => removeBookmark()}/> :
         <InactiveBookmark onClick={e => addBookmark()}/>
       }
-    </>
+    </div>
   )
 }
 
