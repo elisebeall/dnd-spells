@@ -10,7 +10,7 @@ export const bookmarkReducer = (state, action) => {
         id: uuidv4()
       }];
     case 'REMOVE_BOOKMARK':
-      return state.filter(bookmark => bookmark.id !== action.id);
+      return state.filter(bookmark => bookmark.index !== action.index);
     default:
       return state;
   }
