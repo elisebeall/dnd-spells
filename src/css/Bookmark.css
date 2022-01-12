@@ -1,3 +1,9 @@
-/*
-  This may be an unnecessary file...
-*/
+.bookmark {
+  font-size: x-large;
+  color: #985829
+}
+
+.bookmark:hover {
+  cursor: pointer;
+  color: #511012;
+}
