@@ -1,0 +1,27 @@
+.classNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #511012; 
+    width: 20%;
+
+}
+
+.classLink {
+    font-size: 120%;
+    padding: 10% 5%;
+    background-color: #511012; 
+    color: #F0E1BB;
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid #DFA03F;
+}
+
+.classLink:hover {
+    background-color: #F0E1BB;
+    color: #511012; 
+}
+
+.active {
+    color: #DFA03F;
+}
