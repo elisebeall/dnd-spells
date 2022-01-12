@@ -25,35 +25,37 @@ const SpellDetails = ({}) => {
                 <div className='individual-spell'>
                   <Bookmark spell={spell}/>
                   <h3>{details.name}</h3>
-                  <table className='details'>
-                    <tr>
-                      <th>Level:</th>
-                      <td>{details.level}</td>
-                    </tr>
-                    <tr>
-                      <th>Range:</th>
-                      <td>{details.range}</td>
-                    </tr>
-                    <tr>
-                      <th>Casting Time:</th>
-                      <td>{details.casting_time}</td>
-                    </tr>
-                    <tr>
-                      <th>Components:</th>
-                      <td>{details.components}</td>
-                    </tr>
-                    <tr>
-                      <th>Duration:</th>
-                      <td>{details.duration}</td>
-                    </tr>
-                    <tr>
-                      <th>School Name:</th>
-                      <td>{details.school.name}</td>
-                    </tr>
-                    <tr>
-                      <th>Materials:</th>
-                      <td>{details.material}</td>
-                    </tr>
+                  <table>
+                    <tbody className='details'>
+                      <tr>
+                        <th>Level:</th>
+                        <td>{details.level}</td>
+                      </tr>
+                      <tr>
+                        <th>Range:</th>
+                        <td>{details.range}</td>
+                      </tr>
+                      <tr>
+                        <th>Casting Time:</th>
+                        <td>{details.casting_time}</td>
+                      </tr>
+                      <tr>
+                        <th>Components:</th>
+                        <td>{details.components}</td>
+                      </tr>
+                      <tr>
+                        <th>Duration:</th>
+                        <td>{details.duration}</td>
+                      </tr>
+                      <tr>
+                        <th>School Name:</th>
+                        <td>{details.school.name}</td>
+                      </tr>
+                      <tr>
+                        <th>Materials:</th>
+                        <td>{details.material}</td>
+                      </tr>
+                    </tbody>
                   </table>
                   <p className='description'>Description: {details.desc}</p>
                 </div>
