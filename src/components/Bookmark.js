@@ -22,7 +22,7 @@ const Bookmark = ({ spell }) => {
 
   return (
     <>
-      {isIncluded ?
+      {isBookmarked ?
         <ActiveBookmark onClick={e => removeBookmark()}/> :
         <InactiveBookmark onClick={e => addBookmark()}/>
       }
