@@ -1,0 +1,13 @@
+.loading-box {
+  grid-column: 1 / 5;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  align-self: center;
+}
+
+h3 {
+  font-family: 'oblivion';
+}
