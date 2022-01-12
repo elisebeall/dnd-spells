@@ -10,7 +10,7 @@ const UserSpellbookContextProvider = (props) => {
   });
 
   useEffect(()=> {
-    localStorage.setItem('bookmarks', JSON.stringify(bookmarks))
+    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   }, [bookmarks])
 
   return (
