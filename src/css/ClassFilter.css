@@ -25,3 +25,24 @@
 .active {
     color: #DFA03F;
 }
+
+@media screen and (max-width: 650px) {
+    .classNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .classLink {
+        font-size: 80%;
+        padding: 1% 3%;
+        margin: 1%;
+        background-color: #511012;
+        color: #F0E1BB;
+        width: 30%;
+        text-align: center;
+        border-bottom: 3px solid #DFA03F;
+    }
+}

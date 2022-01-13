@@ -21,3 +21,13 @@
     padding: 1%;
     border-bottom: 3px solid #DFA03F;
 }
+
+@media screen and (max-width: 650px) {
+    .spellBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: 'oblivion';
+    }
+    
+}
