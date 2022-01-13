@@ -24,6 +24,10 @@ Squizard's Spells is an app that allows its users to filter through Dungeons and
 -  Hooks
 
 ## Illustrations
+![Home Page](./src/assets/Home-page.png)
+![Classes](./src/assets/Classes.png)
+![Spell-details.png](./src/assets/Spell-details.png)
+![Spell-list](./src/assets/Spell-list.png)
 
 ## Install
 
