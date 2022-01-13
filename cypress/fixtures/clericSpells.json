@@ -1,0 +1,535 @@
+{
+"count": 106,
+"results": [
+{
+"index": "guidance",
+"name": "Guidance",
+"url": "/api/spells/guidance"
+},
+{
+"index": "light",
+"name": "Light",
+"url": "/api/spells/light"
+},
+{
+"index": "mending",
+"name": "Mending",
+"url": "/api/spells/mending"
+},
+{
+"index": "resistance",
+"name": "Resistance",
+"url": "/api/spells/resistance"
+},
+{
+"index": "sacred-flame",
+"name": "Sacred Flame",
+"url": "/api/spells/sacred-flame"
+},
+{
+"index": "spare-the-dying",
+"name": "Spare the Dying",
+"url": "/api/spells/spare-the-dying"
+},
+{
+"index": "thaumaturgy",
+"name": "Thaumaturgy",
+"url": "/api/spells/thaumaturgy"
+},
+{
+"index": "animal-friendship",
+"name": "Animal Friendship",
+"url": "/api/spells/animal-friendship"
+},
+{
+"index": "bane",
+"name": "Bane",
+"url": "/api/spells/bane"
+},
+{
+"index": "bless",
+"name": "Bless",
+"url": "/api/spells/bless"
+},
+{
+"index": "command",
+"name": "Command",
+"url": "/api/spells/command"
+},
+{
+"index": "create-or-destroy-water",
+"name": "Create or Destroy Water",
+"url": "/api/spells/create-or-destroy-water"
+},
+{
+"index": "cure-wounds",
+"name": "Cure Wounds",
+"url": "/api/spells/cure-wounds"
+},
+{
+"index": "detect-evil-and-good",
+"name": "Detect Evil and Good",
+"url": "/api/spells/detect-evil-and-good"
+},
+{
+"index": "detect-magic",
+"name": "Detect Magic",
+"url": "/api/spells/detect-magic"
+},
+{
+"index": "detect-poison-and-disease",
+"name": "Detect Poison and Disease",
+"url": "/api/spells/detect-poison-and-disease"
+},
+{
+"index": "guiding-bolt",
+"name": "Guiding Bolt",
+"url": "/api/spells/guiding-bolt"
+},
+{
+"index": "healing-word",
+"name": "Healing Word",
+"url": "/api/spells/healing-word"
+},
+{
+"index": "inflict-wounds",
+"name": "Inflict Wounds",
+"url": "/api/spells/inflict-wounds"
+},
+{
+"index": "protection-from-evil-and-good",
+"name": "Protection from Evil and Good",
+"url": "/api/spells/protection-from-evil-and-good"
+},
+{
+"index": "purify-food-and-drink",
+"name": "Purify Food and Drink",
+"url": "/api/spells/purify-food-and-drink"
+},
+{
+"index": "sanctuary",
+"name": "Sanctuary",
+"url": "/api/spells/sanctuary"
+},
+{
+"index": "shield-of-faith",
+"name": "Shield of Faith",
+"url": "/api/spells/shield-of-faith"
+},
+{
+"index": "aid",
+"name": "Aid",
+"url": "/api/spells/aid"
+},
+{
+"index": "augury",
+"name": "Augury",
+"url": "/api/spells/augury"
+},
+{
+"index": "blindness-deafness",
+"name": "Blindness/Deafness",
+"url": "/api/spells/blindness-deafness"
+},
+{
+"index": "calm-emotions",
+"name": "Calm Emotions",
+"url": "/api/spells/calm-emotions"
+},
+{
+"index": "continual-flame",
+"name": "Continual Flame",
+"url": "/api/spells/continual-flame"
+},
+{
+"index": "enhance-ability",
+"name": "Enhance Ability",
+"url": "/api/spells/enhance-ability"
+},
+{
+"index": "find-traps",
+"name": "Find Traps",
+"url": "/api/spells/find-traps"
+},
+{
+"index": "gentle-repose",
+"name": "Gentle Repose",
+"url": "/api/spells/gentle-repose"
+},
+{
+"index": "hold-person",
+"name": "Hold Person",
+"url": "/api/spells/hold-person"
+},
+{
+"index": "lesser-restoration",
+"name": "Lesser Restoration",
+"url": "/api/spells/lesser-restoration"
+},
+{
+"index": "locate-object",
+"name": "Locate Object",
+"url": "/api/spells/locate-object"
+},
+{
+"index": "prayer-of-healing",
+"name": "Prayer of Healing",
+"url": "/api/spells/prayer-of-healing"
+},
+{
+"index": "protection-from-poison",
+"name": "Protection from Poison",
+"url": "/api/spells/protection-from-poison"
+},
+{
+"index": "silence",
+"name": "Silence",
+"url": "/api/spells/silence"
+},
+{
+"index": "spiritual-weapon",
+"name": "Spiritual Weapon",
+"url": "/api/spells/spiritual-weapon"
+},
+{
+"index": "warding-bond",
+"name": "Warding Bond",
+"url": "/api/spells/warding-bond"
+},
+{
+"index": "zone-of-truth",
+"name": "Zone of Truth",
+"url": "/api/spells/zone-of-truth"
+},
+{
+"index": "animate-dead",
+"name": "Animate Dead",
+"url": "/api/spells/animate-dead"
+},
+{
+"index": "beacon-of-hope",
+"name": "Beacon of Hope",
+"url": "/api/spells/beacon-of-hope"
+},
+{
+"index": "bestow-curse",
+"name": "Bestow Curse",
+"url": "/api/spells/bestow-curse"
+},
+{
+"index": "clairvoyance",
+"name": "Clairvoyance",
+"url": "/api/spells/clairvoyance"
+},
+{
+"index": "create-food-and-water",
+"name": "Create Food and Water",
+"url": "/api/spells/create-food-and-water"
+},
+{
+"index": "daylight",
+"name": "Daylight",
+"url": "/api/spells/daylight"
+},
+{
+"index": "dispel-magic",
+"name": "Dispel Magic",
+"url": "/api/spells/dispel-magic"
+},
+{
+"index": "glyph-of-warding",
+"name": "Glyph of Warding",
+"url": "/api/spells/glyph-of-warding"
+},
+{
+"index": "magic-circle",
+"name": "Magic Circle",
+"url": "/api/spells/magic-circle"
+},
+{
+"index": "mass-healing-word",
+"name": "Mass Healing Word",
+"url": "/api/spells/mass-healing-word"
+},
+{
+"index": "meld-into-stone",
+"name": "Meld Into Stone",
+"url": "/api/spells/meld-into-stone"
+},
+{
+"index": "protection-from-energy",
+"name": "Protection From Energy",
+"url": "/api/spells/protection-from-energy"
+},
+{
+"index": "remove-curse",
+"name": "Remove Curse",
+"url": "/api/spells/remove-curse"
+},
+{
+"index": "revivify",
+"name": "Revivify",
+"url": "/api/spells/revivify"
+},
+{
+"index": "sending",
+"name": "Sending",
+"url": "/api/spells/sending"
+},
+{
+"index": "speak-with-dead",
+"name": "Speak with Dead",
+"url": "/api/spells/speak-with-dead"
+},
+{
+"index": "spirit-guardians",
+"name": "Spirit Guardians",
+"url": "/api/spells/spirit-guardians"
+},
+{
+"index": "tongues",
+"name": "Tongues",
+"url": "/api/spells/tongues"
+},
+{
+"index": "water-walk",
+"name": "Water Walk",
+"url": "/api/spells/water-walk"
+},
+{
+"index": "arcane-eye",
+"name": "Arcane Eye",
+"url": "/api/spells/arcane-eye"
+},
+{
+"index": "banishment",
+"name": "Banishment",
+"url": "/api/spells/banishment"
+},
+{
+"index": "control-water",
+"name": "Control Water",
+"url": "/api/spells/control-water"
+},
+{
+"index": "death-ward",
+"name": "Death Ward",
+"url": "/api/spells/death-ward"
+},
+{
+"index": "freedom-of-movement",
+"name": "Freedom of Movement",
+"url": "/api/spells/freedom-of-movement"
+},
+{
+"index": "guardian-of-faith",
+"name": "Guardian of Faith",
+"url": "/api/spells/guardian-of-faith"
+},
+{
+"index": "locate-creature",
+"name": "Locate Creature",
+"url": "/api/spells/locate-creature"
+},
+{
+"index": "stone-shape",
+"name": "Stone Shape",
+"url": "/api/spells/stone-shape"
+},
+{
+"index": "commune",
+"name": "Commune",
+"url": "/api/spells/commune"
+},
+{
+"index": "contagion",
+"name": "Contagion",
+"url": "/api/spells/contagion"
+},
+{
+"index": "dispel-evil-and-good",
+"name": "Dispel Evil and Good",
+"url": "/api/spells/dispel-evil-and-good"
+},
+{
+"index": "flame-strike",
+"name": "Flame Strike",
+"url": "/api/spells/flame-strike"
+},
+{
+"index": "geas",
+"name": "Geas",
+"url": "/api/spells/geas"
+},
+{
+"index": "greater-restoration",
+"name": "Greater Restoration",
+"url": "/api/spells/greater-restoration"
+},
+{
+"index": "hallow",
+"name": "Hallow",
+"url": "/api/spells/hallow"
+},
+{
+"index": "insect-plague",
+"name": "Insect Plague",
+"url": "/api/spells/insect-plague"
+},
+{
+"index": "legend-lore",
+"name": "Legend Lore",
+"url": "/api/spells/legend-lore"
+},
+{
+"index": "mass-cure-wounds",
+"name": "Mass Cure Wounds",
+"url": "/api/spells/mass-cure-wounds"
+},
+{
+"index": "planar-binding",
+"name": "Planar Binding",
+"url": "/api/spells/planar-binding"
+},
+{
+"index": "raise-dead",
+"name": "Raise Dead",
+"url": "/api/spells/raise-dead"
+},
+{
+"index": "scrying",
+"name": "Scrying",
+"url": "/api/spells/scrying"
+},
+{
+"index": "blade-barrier",
+"name": "Blade Barrier",
+"url": "/api/spells/blade-barrier"
+},
+{
+"index": "create-undead",
+"name": "Create Undead",
+"url": "/api/spells/create-undead"
+},
+{
+"index": "find-the-path",
+"name": "Find the Path",
+"url": "/api/spells/find-the-path"
+},
+{
+"index": "forbiddance",
+"name": "Forbiddance",
+"url": "/api/spells/forbiddance"
+},
+{
+"index": "harm",
+"name": "Harm",
+"url": "/api/spells/harm"
+},
+{
+"index": "heal",
+"name": "Heal",
+"url": "/api/spells/heal"
+},
+{
+"index": "heroes-feast",
+"name": "Heroes' Feast",
+"url": "/api/spells/heroes-feast"
+},
+{
+"index": "planar-ally",
+"name": "Planar Ally",
+"url": "/api/spells/planar-ally"
+},
+{
+"index": "true-seeing",
+"name": "True Seeing",
+"url": "/api/spells/true-seeing"
+},
+{
+"index": "word-of-recall",
+"name": "Word of Recall",
+"url": "/api/spells/word-of-recall"
+},
+{
+"index": "conjure-celestial",
+"name": "Conjure Celestial",
+"url": "/api/spells/conjure-celestial"
+},
+{
+"index": "divine-word",
+"name": "Divine Word",
+"url": "/api/spells/divine-word"
+},
+{
+"index": "etherealness",
+"name": "Etherealness",
+"url": "/api/spells/etherealness"
+},
+{
+"index": "fire-storm",
+"name": "Fire Storm",
+"url": "/api/spells/fire-storm"
+},
+{
+"index": "plane-shift",
+"name": "Plane Shift",
+"url": "/api/spells/plane-shift"
+},
+{
+"index": "regenerate",
+"name": "Regenerate",
+"url": "/api/spells/regenerate"
+},
+{
+"index": "resurrection",
+"name": "Resurrection",
+"url": "/api/spells/resurrection"
+},
+{
+"index": "symbol",
+"name": "Symbol",
+"url": "/api/spells/symbol"
+},
+{
+"index": "antimagic-field",
+"name": "Antimagic Field",
+"url": "/api/spells/antimagic-field"
+},
+{
+"index": "control-weather",
+"name": "Control Weather",
+"url": "/api/spells/control-weather"
+},
+{
+"index": "earthquake",
+"name": "Earthquake",
+"url": "/api/spells/earthquake"
+},
+{
+"index": "holy-aura",
+"name": "Holy Aura",
+"url": "/api/spells/holy-aura"
+},
+{
+"index": "astral-projection",
+"name": "Astral Projection",
+"url": "/api/spells/astral-projection"
+},
+{
+"index": "gate",
+"name": "Gate",
+"url": "/api/spells/gate"
+},
+{
+"index": "mass-heal",
+"name": "Mass Heal",
+"url": "/api/spells/mass-heal"
+},
+{
+"index": "true-resurrection",
+"name": "True Resurrection",
+"url": "/api/spells/true-resurrection"
+}
+]
+}
