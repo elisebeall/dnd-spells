@@ -25,3 +25,17 @@
 tr {
   margin: 1%;
 }
+
+@media screen and (max-width: 650px) {
+  .detailsBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .individual-spell {
+    width: 80%;
+    font-size: 100%;
+  }
+}
