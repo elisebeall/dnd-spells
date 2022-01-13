@@ -42,8 +42,10 @@ describe('Squizards Spells functionality', () => {
       .get('.home-nav:first')
       .click()
       .url().should('include', 'class')
-    cy.get('.char-class-card').should('include', 'Barbarian')
+    cy.get('.char-class-box')
+      .get('h3').should('contain', 'Barbarian')
   })
+
 
   it('should allow users to sort spells by class', () => {
     cy.get('main')
@@ -56,6 +58,14 @@ describe('Squizards Spells functionality', () => {
       .get('.char-class-card')
       .contains('Bard')
       .click()
+
+      cy.fixture('bardSpells.json').as('bardSpells').then((bardSpells) => {
+        cy.intercept('GET', 'https://www.dnd5eapi.co/api/classes/bard/spells', {
+          statusCode: 200,
+          ok: true,
+          body: bardSpells
+        })
+      })
 
     cy.get('body')
       .get('div')
