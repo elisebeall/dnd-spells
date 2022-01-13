@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Squizard's Spells
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Mod3 Group Stretch Tech Project
 
-## Available Scripts
+## Table of Contents
+- [Abstract](#Abstract)
+- [Technologies](#Technologies)
+- [Illustrations](#Illustrations)
+- [Install](#Install)
+- [Wins](#Wins)
+- [Challenges](#Challenges)
+- [Additions](#Additions)
+- [Contributors](#Contributors)
 
-In the project directory, you can run:
+## Abstract
+Squizard's Spells is an app that allows its users to filter through Dungeons and Dragons 5th Edition spells and save those spells in a personal spellbook. Spells saved will persist on page load as well. When a user reaches the site, they will be able to look at their personal spellbook or browse spells. Then they can choose the character class that they are playing to narrow it down to spells that that class can use. Players can then click on spells to get the full details or bookmark them to save them to their spellbook.
 
-### `npm start`
+## Technologies
+-  HTML
+-  CSS
+-  JavaScript
+-  React
+-  Context Api
+-  Hooks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Illustrations
+![Home Page](./src/assets/Home-page.png)
+![Classes](./src/assets/Classes.png)
+![Spell-details.png](./src/assets/Spell-details.png)
+![Spell-list](./src/assets/Spell-list.png)
+![Loading-gif](./src/assets/squiz.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Install
 
-### `npm test`
+-  Clone this [repo](https://github.com/elisebeall/dnd-spells) to your machine
+-  cd into the directory `dnd-spells`
+-  Run `npm install`
+-  Run `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Wins
+- Researching Context Api and implementing it
+- Using Hooks to help manage state
 
-### `npm run build`
+## Challenges
+- context api
+- Custom hooks
+- Building a React app of this size
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Additions
+### Future Iterations
+- Add ability to create a character
+- Impliment ability to sort spells by level
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributors
+- [August Reid](https://github.com/augustreid)
+- [Brian Peterson](https://github.com/bpeterson2579)
+- [Elise Beall](https://github.com/elisebeall)
