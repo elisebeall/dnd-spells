@@ -17,7 +17,7 @@ const SpellBox = () => {
   if (!isLoading) {
     spells = charSpells.map(spell => {
       return (
-        <div key={spell.index} className="singleSpell">
+        <div key={spell.index} className="single-spell">
           <Link to={`/spells/${spell.index}`} >
             <Spell
               name={spell.name}
@@ -30,12 +30,12 @@ const SpellBox = () => {
   }
 
   return (
-    <div className="spellBox">
+    <div className="spell-box">
       <ClassFilter />
       {isLoading ? <Loading /> :
         <>
            {error ? <>{error}</> :
-            <div className="spellContainer">
+            <div className="spell-container">
                   {!spells.length ? <MuggleMessage charClass={charClass} /> : spells}
             </div>
           }

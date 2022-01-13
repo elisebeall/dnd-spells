@@ -1,4 +1,4 @@
-.detailsBox {
+.details-box {
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@ tr {
 }
 
 @media screen and (max-width: 650px) {
-  .detailsBox {
+  .details-box {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;

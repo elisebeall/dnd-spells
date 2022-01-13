@@ -1,4 +1,4 @@
-.spellBook {
+.spell-book {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -7,7 +7,7 @@
     font-family: 'oblivion';
 }
 
-.singleSpell {
+.single-spell {
     display: flex;
     justify-content: space-between;
     font-size: x-large;

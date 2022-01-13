@@ -10,7 +10,7 @@ const UserSpellbook = () => {
 
   const displaySpells = bookmarks.map(spell => {
     return (
-      <div key={spell.index} className="singleSpell">
+      <div key={spell.index} className="single-spell">
         <Link to={`/spells/${spell.index}`}>
           <Spell
             name={spell.name}
@@ -22,7 +22,7 @@ const UserSpellbook = () => {
   })
 
   return (
-    <div className="spellBook">
+    <div className="spell-book">
       <h2>My Saved Spells</h2>
       {displaySpells}
     </div>

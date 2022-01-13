@@ -1,11 +1,11 @@
-.spellBox {
+.spell-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-family: 'oblivion';
 }
 
-.spellContainer {
+.spell-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -13,7 +13,7 @@
     width: 60%;
 }
 
-.singleSpell {
+.single-spell {
     display: flex;
     justify-content: space-between;
     font-size: x-large;
@@ -23,17 +23,17 @@
 }
 
 @media screen and (max-width: 650px) {
-    .spellBox {
+    .spell-box {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
 
-    .spellContainer {
+    .spell-container {
         width: 85%;
     }
 
-    .singleSpell {
+    .single-spell {
         font-size: 105%;
         width: 100%;
     }
