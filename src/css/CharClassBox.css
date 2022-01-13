@@ -4,3 +4,30 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
 }
+
+@media screen and (max-width: 1300px) {
+  .char-class-box {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .char-class-box {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .char-class-box {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+}

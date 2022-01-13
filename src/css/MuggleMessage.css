@@ -1,0 +1,13 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    height: 50%;
+    text-align: center;
+}
+
+.plain-font {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

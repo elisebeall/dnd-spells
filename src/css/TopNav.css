@@ -60,6 +60,13 @@ h1 {
   }
 }
 
+@media screen and (max-width: 680px) {
+  .top-nav-btn {
+    font-size: 1.1rem;
+    padding: .5rem 0;
+  }
+}
+
 @media screen and (max-width: 415px) {
   header {
     display: flex;
