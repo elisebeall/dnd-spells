@@ -5,13 +5,17 @@ describe('Squizards Spells functionality', () => {
     cy.visit('localhost:3000')
   })
 
-  /*
-    cy.intercept('GET', 'https://www.dnd5eapi.co/api/', {
-      statusCode: 200,
-      ok: true,
-      body: { stubData }
+  it('should display an error if there is a problem with the server', () => {
+    cy.intercept('GET', 'https://www.dnd5eapi.co/api/classes/', {
+      statusCode: 500,
+      ok: false,
+      body: {}
     })
-  */
+
+    cy.visit('localhost:3000/class/')
+      .get('.char-class-box')
+      .should('contain', 'Squizard is sorry!  Something has gone wrong, please try again.')
+  })
 
   it('should display a nav bar', () => {
     cy.get('header')
