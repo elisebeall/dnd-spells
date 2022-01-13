@@ -50,15 +50,12 @@ describe('Squizards Spells functionality', () => {
       .get('h3').should('contain', 'Barbarian')
   })
 
-
   it('should allow users to sort spells by class', () => {
     cy.get('main')
       .get('.home-nav:first')
       .click()
 
     cy.get('body')
-      .get('div')
-      .get('div')
       .get('.char-class-card')
       .contains('Bard')
       .click()
@@ -72,8 +69,6 @@ describe('Squizards Spells functionality', () => {
       })
 
     cy.get('body')
-      .get('div')
-      .get('div')
       .get('.spell-box:first')
       .contains('Dancing Lights')
   })
@@ -125,7 +120,6 @@ describe('Squizards Spells functionality', () => {
 
   it('should allow users to add and remove bookmarks on spells, and view bookmarked spells in My Spellbook', () => {
    
-
     cy.fixture('clericSpells.json').as('clericSpells').then((clericSpells) => {
       cy.intercept('GET', 'https://www.dnd5eapi.co/api/classes/cleric/spells', {
         statusCode: 200,
