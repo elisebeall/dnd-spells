@@ -86,6 +86,14 @@ describe('Squizards Spells functionality', () => {
       .contains('Cleric')
       .click()
 
+      cy.fixture('clericSpells.json').as('clericSpells').then((clericSpells) => {
+        cy.intercept('GET', 'https://www.dnd5eapi.co/api/classes/cleric/spells', {
+          statusCode: 200,
+          ok: true,
+          body: clericSpells
+        })
+      })
+
     cy.get('body')
       .get('div')
       .get('div')
@@ -94,6 +102,15 @@ describe('Squizards Spells functionality', () => {
   })
 
   it('should allow the user to see all spell details when each spell is clicked on', () => {
+ 
+    cy.fixture('guidance.json').as('guidance').then((guidance) => {
+      cy.intercept('GET', 'https://www.dnd5eapi.co/api/spells/guidance', {
+        statusCode: 200,
+        ok: true,
+        body: guidance
+      })
+    })
+
     cy.visit('http://localhost:3000/spells/guidance')
 
     cy.get('body')
@@ -103,17 +120,28 @@ describe('Squizards Spells functionality', () => {
   })
 
   it('should allow users to bookmark spells from the class page', () => {
-    cy.visit('http://localhost:3000/sorcerer/spells')
+   
+
+    cy.fixture('clericSpells.json').as('clericSpells').then((clericSpells) => {
+      cy.intercept('GET', 'https://www.dnd5eapi.co/api/classes/cleric/spells', {
+        statusCode: 200,
+        ok: true,
+        body: clericSpells
+      })
+    })
+
+      cy.visit('http://localhost:3000/cleric/spells')
+
       .get('.spellContainer')
       .get('.spellBox')
       .get('div')
       .get('.bookmark:first')
       .click()
 
-    cy.visit('http://localhost:3000/sorcerer/spells')
+    cy.visit('http://localhost:3000/cleric/spells')
       .get('div')
       .get('div')
       .get('.singleSpell')
-      .contains('Acid Splash')
+      .contains('Guidance')
   })
 })
