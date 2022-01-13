@@ -2,22 +2,23 @@ import stubData from '../../../src/assets/stubData';
 
 describe('Squizards Spells functionality', () => {
   beforeEach(() => {
+    cy.visit('localhost:3000')
+  })
+
+  /*
     cy.intercept('GET', 'https://www.dnd5eapi.co/api/', {
       statusCode: 200,
       ok: true,
       body: { stubData }
     })
-    cy.visit('localhost:3000')
-    
-  })
+  */
 
   it('should display a nav bar', () => {
     cy.get('header')
       .get('h1')
       .contains("Squizard's Spells")
-
     })
-  
+
   it('should display two options to click on', () => {
     cy.get('main')
       .get('.home-nav')
@@ -29,10 +30,19 @@ describe('Squizards Spells functionality', () => {
   })
 
   it('should display the classes that spells can be filtered by', () => {
+    cy.fixture('classes.json').as('classes').then((classes) => {
+      cy.intercept('GET', 'https://www.dnd5eapi.co/api/classes/', {
+        statusCode: 200,
+        ok: true,
+        body: classes
+      })
+    })
+
     cy.get('main')
       .get('.home-nav:first')
       .click()
       .url().should('include', 'class')
+    cy.get('.char-class-card').should('include', 'Barbarian')
   })
 
   it('should allow users to sort spells by class', () => {
@@ -46,7 +56,7 @@ describe('Squizards Spells functionality', () => {
       .get('.char-class-card')
       .contains('Bard')
       .click()
-    
+
     cy.get('body')
       .get('div')
       .get('div')
