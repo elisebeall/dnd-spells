@@ -2,7 +2,7 @@ import stubData from '../../../src/assets/stubData';
 
 describe('Squizards Spells functionality', () => {
   beforeEach(() => {
-    cy.visit('localhost:3000')
+    cy.visit('http://localhost:3000/')
   })
 
   it('should display an error if there is a problem with the server', () => {
@@ -74,7 +74,7 @@ describe('Squizards Spells functionality', () => {
     cy.get('body')
       .get('div')
       .get('div')
-      .get('.spellBox:first')
+      .get('.spell-box:first')
       .contains('Dancing Lights')
   })
 
@@ -101,7 +101,7 @@ describe('Squizards Spells functionality', () => {
     cy.get('body')
       .get('div')
       .get('div')
-      .get('.spellBox:first')
+      .get('.spell-box:first')
       .contains('Guidance')
   })
 
@@ -123,7 +123,7 @@ describe('Squizards Spells functionality', () => {
       .contains('Guidance')
   })
 
-  it('should allow users to bookmark spells from the class page', () => {
+  it('should allow users to add and remove bookmarks on spells, and view bookmarked spells in My Spellbook', () => {
    
 
     cy.fixture('clericSpells.json').as('clericSpells').then((clericSpells) => {
@@ -136,16 +136,17 @@ describe('Squizards Spells functionality', () => {
 
       cy.visit('http://localhost:3000/cleric/spells')
 
-      .get('.spellContainer')
-      .get('.spellBox')
-      .get('div')
+      .get('.spell-container')
+      .get('.spell-box')
+      .get('.single-spell')
+      .contains('Guidance')
       .get('.bookmark:first')
       .click()
 
-    cy.visit('http://localhost:3000/cleric/spells')
-      .get('div')
-      .get('div')
-      .get('.singleSpell')
+      cy.visit('http://localhost:3000/my-spellbook')
+      .get('.single-spell')
       .contains('Guidance')
+      .get('.bookmark:first')
+      .click()
   })
 })
