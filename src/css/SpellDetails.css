@@ -1,4 +1,4 @@
-.detailsBox {
+.details-box {
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -24,4 +24,18 @@
 
 tr {
   margin: 1%;
+}
+
+@media screen and (max-width: 650px) {
+  .details-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .individual-spell {
+    width: 80%;
+    font-size: 100%;
+  }
 }

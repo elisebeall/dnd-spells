@@ -4,9 +4,9 @@ import Spell from './Spell';
 import Bookmark from './Bookmark';
 import ClassFilter from './ClassFilter';
 import Loading from './Loading';
+import MuggleMessage from './MuggleMessage';
 import '../css/SpellBox.css';
 import useFetch from '../hooks/useFetch';
-import endpoints from '../endpoints.js';
 
 const SpellBox = () => {
   const charClass = useParams().class;
@@ -17,7 +17,7 @@ const SpellBox = () => {
   if (!isLoading) {
     spells = charSpells.map(spell => {
       return (
-        <div key={spell.index} className="singleSpell">
+        <div key={spell.index} className="single-spell">
           <Link to={`/spells/${spell.index}`} >
             <Spell
               name={spell.name}
@@ -30,13 +30,13 @@ const SpellBox = () => {
   }
 
   return (
-    <div className="spellBox">
+    <div className="spell-box">
       <ClassFilter />
       {isLoading ? <Loading /> :
         <>
            {error ? <>{error}</> :
-            <div className="spellContainer">
-              {spells}
+            <div className="spell-container">
+                  {!spells.length ? <MuggleMessage charClass={charClass} /> : spells}
             </div>
           }
         </>

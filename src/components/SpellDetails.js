@@ -17,7 +17,7 @@ const SpellDetails = () => {
   }
 
   return(
-    <div className="detailsBox">
+    <div className="details-box">
       <ClassFilter />
       {isLoading ? <Loading /> :
         <>
